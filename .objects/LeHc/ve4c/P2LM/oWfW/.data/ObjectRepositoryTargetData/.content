@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uwzGlGruCkis3DWu_D0DuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com" DesignTimeRectangle="1440, 131, 375, 899" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;ytd-popup-container&amp;gt;tp-yt-iron-dropdown&amp;gt;div&amp;gt;ytd-multi-page-menu-renderer' parentid='contentWrapper' tabindex='-1' tag='YTD-MULTI-PAGE-MENU-RENDERER' /&gt;" Guid="a849bfe1-9321-46af-91f4-d44a790eae8e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="99fb82550e39441ee90116f27665763e.png" xmlns="">0RJlrXAfIsUurgg_nwEL6Sw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

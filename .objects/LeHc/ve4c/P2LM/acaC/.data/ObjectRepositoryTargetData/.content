@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CTMuspgAG025dafxRj7G5A" Reference="wDpHw_6omkaShnTsPOtoxw/acaCTzC28EaLdPF6gSFgoA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com" CVScreenId="e8f5fe72-dd0e-4fd2-bc5f-dae6f6d672f7" DesignTimeRectangle="1440, 322, 362, 50" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl visibleinnertext='Switch account' /&gt;" Guid="517733d1-6731-482d-9363-0626f379da90" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b55420ca26e65575724dbea8da2970d7.png" xmlns="">0kZLUqS6U4EWGqtAQ0c4-Rw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

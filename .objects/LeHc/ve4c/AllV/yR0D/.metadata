@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT text-input",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "yR0DdCPiFkGWb_R-hHcAmw",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/yR0DdCPiFkGWb_R-hHcAmw",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/AllVzrle406Z6gsQ0G0LKQ",
+  "Created": "2026-01-30T02:01:53.854121Z",
+  "Updated": "2026-01-30T02:01:53.854121Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

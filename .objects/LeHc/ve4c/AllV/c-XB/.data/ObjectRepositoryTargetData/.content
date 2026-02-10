@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="75YTAMLu10-1yx8jnyCDhQ" Reference="wDpHw_6omkaShnTsPOtoxw/c-XBJpDb30uMexxDVdYQrw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload" CVScreenId="9189ab7e-c2aa-4b90-8f63-ae86051cfcba" DesignTimeRectangle="9, 160, 0, 0" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='yt-spec-touch-feedback-shape__fill' parentid='done-button' tag='DIV' idx='{0}' /&gt;&quot;, intIndex)]" Guid="6bde62a6-6cf7-43ab-bd75-9aad55d96db9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="d80e29cd489d2cd3426d3bfe69edef2a.png" xmlns="">0yoSQVeE0R02s0BUdcuB5ng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="1" Name="intIndex" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

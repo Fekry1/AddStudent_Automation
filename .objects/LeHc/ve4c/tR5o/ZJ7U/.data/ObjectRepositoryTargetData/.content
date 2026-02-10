@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="roSY40q2E0uNrjSGlifSrw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com/@OmarFekry-A1" CVScreenId="485066f2-8f10-429b-a36d-c07b016780f5" DesignTimeRectangle="661, 284, 129, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='yt-core-attributed-string--link-inherit-color' parentid='page-header' tag='SPAN' /&gt;" Guid="3b695062-9ae0-4403-84ff-56e69b3e07ad" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6ca70ad7451f32a661ab8806cd6fb4c2.png" xmlns="">0Ci-4n4JoK0uXOsZhp8KvTA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

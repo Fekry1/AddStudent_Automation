@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Switch account",
+  "Type": "Element",
+  "Id": "acaCTzC28EaLdPF6gSFgoA",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/acaCTzC28EaLdPF6gSFgoA",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/P2LMBAv5Yk6tiXVY_Lm07w",
+  "Created": "2025-11-03T01:11:24.2160549Z",
+  "Updated": "2025-11-03T01:11:24.2160549Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TRoBfLsG40y4qP_OnFKoJg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com/@OmarFekry-A1" CVScreenId="0cda7e56-95a8-40a2-9081-8d642ecdfa04" DesignTimeRectangle="860, 362, 159, 45" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='yt-spec-touch-feedback-shape__fill' parentid='page-header' idx='2' /&gt;" Guid="4bd580eb-d324-4780-a2c9-93a97777626c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7e7b9f2b1aac80abdac28c3d5036d775.png" xmlns="">0Qe4yH2IVJ0-KyycgChnvEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

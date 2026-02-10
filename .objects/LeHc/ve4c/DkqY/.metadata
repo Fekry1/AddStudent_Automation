@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome (888) YouTube",
+  "Type": "Screen",
+  "Id": "DkqYF5kObUyaXxDSK1dHfA",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/DkqYF5kObUyaXxDSK1dHfA",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/ve4cfFQZL0y8EXpcHpdtfA",
+  "Created": "2025-11-03T00:37:29.262053Z",
+  "Updated": "2025-11-03T00:37:29.262053Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

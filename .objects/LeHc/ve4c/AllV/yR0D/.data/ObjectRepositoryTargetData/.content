@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0mNps2H3jUGAslW-vaG3Cg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload" DesignTimeRectangle="963, 615, 234, 40" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Invitees' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' id='text-input' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' class='text-input style-scope ytcp-chip-bar' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="01ab43f0-83d2-40b7-9295-99f5bfd0ca46" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="2f7e4628139ab9f742a952bda290075b.png" xmlns="">0MtPIF7Q6-0aURQkGt1ycUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

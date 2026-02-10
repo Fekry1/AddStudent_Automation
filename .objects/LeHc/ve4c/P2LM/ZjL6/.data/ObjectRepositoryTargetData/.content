@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ctv5HPdKK06Imi4X_Mg2LA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com" DesignTimeRectangle="1515, 640, 375, 70" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TP-YT-PAPER-ICON-ITEM' innertext='*Omar Fekry*subscribers*' parentclass='style-scope ytd-account-item-section-renderer' idx='2' /&gt;" Guid="10abe8c2-bed7-44c5-a90a-69ef00a985bd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7dc30875caf0c9eaf9ff6668c2e84d05.png" xmlns="">0gVb4kvI9wEO_syL3YE3jAw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

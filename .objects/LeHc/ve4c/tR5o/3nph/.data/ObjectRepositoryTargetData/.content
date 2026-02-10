@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DqUSx39erEi-49v4RKu-9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com/@OmarFekry-A1" CVScreenId="5ba3c04b-ecfb-411c-9566-d3c80c0c63f3" CvElementArea="856, 359, 165, 50" CvTextArea="879, 375, 121, 22" CvTextArgument="Manage videos" CvType="Button" DesignTimeRectangle="860, 362, 159, 45" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='yt-spec-touch-feedback-shape__fill' idx='2' parentid='page-header' tag='DIV' /&gt;" Guid="d8849dd2-a475-485f-bd3c-6e22584e23a8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ba4e6b1d63bb62db0e85c6d20ebecba8.png" xmlns="">0phqMnjZomUONKK39Iybv8Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

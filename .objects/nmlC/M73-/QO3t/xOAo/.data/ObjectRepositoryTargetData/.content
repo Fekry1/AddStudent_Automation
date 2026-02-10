@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="p7d6hKCxG02XVGOSq0elwA" Reference="wDpHw_6omkaShnTsPOtoxw/xOAoIqU18kKV-zHzdlfFSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="drive.google.com/drive/u/1/folders/1ToNnpCRH6bm1qXkOCrMPXLJYn3A8e9kC" CVScreenId="c76ca103-8780-4f7b-b8ca-bd6cfe79020b" CvTextArea="425, 460, 292, 20" CvTextArgument="Copy of Machine learning start-nov" CvType="Text" DesignTimeRectangle="425, 459, 293, 21" ElementVisibilityArgument="Interactive" Guid="28f985d0-db41-48f9-a979-0c8799e104ca" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Payment - Google Drive' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="33bb92c2ccd0b455d3ef430cc5b11391.png" xmlns="">0mQvl_qNH9U699yJD5Wuyzw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

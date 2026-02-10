@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Payment - Google Drive",
+  "Type": "Screen",
+  "Id": "ZX2lIv8S70205FyQ3cgi_g",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/ZX2lIv8S70205FyQ3cgi_g",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/M73-kalvTEGGlyDscv_Tpw",
+  "Created": "2025-11-02T23:47:04.4385108Z",
+  "Updated": "2025-11-02T23:47:04.4385108Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

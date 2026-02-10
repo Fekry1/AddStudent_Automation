@@ -1,0 +1,16 @@
+﻿{
+  "Name": "YouTube",
+  "Type": "Screen",
+  "Id": "tR5oCnLBwkmJdBR7lRvehQ",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/tR5oCnLBwkmJdBR7lRvehQ",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/ve4cfFQZL0y8EXpcHpdtfA",
+  "Created": "2025-11-22T20:27:48.6283503Z",
+  "Updated": "2025-11-22T21:16:10.7275854Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

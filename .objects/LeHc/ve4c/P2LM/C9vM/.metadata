@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Channel content",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "C9vMbILn-0Gawfm_mb9qeQ",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/C9vMbILn-0Gawfm_mb9qeQ",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/P2LMBAv5Yk6tiXVY_Lm07w",
+  "Created": "2025-11-04T00:00:25.0796708Z",
+  "Updated": "2025-11-04T00:00:25.0796708Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

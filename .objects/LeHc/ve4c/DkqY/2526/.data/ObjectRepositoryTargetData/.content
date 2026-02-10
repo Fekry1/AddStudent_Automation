@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NL65L-r6rkigTR7WhyjdSw" Reference="wDpHw_6omkaShnTsPOtoxw/2526kCswTkGZldADpPRrXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com" DesignTimeRectangle="79, 117, 154, 70" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='logo-icon' tag='YT-ICON' /&gt;" Guid="74281a00-70f9-4ad1-9863-929b12c4d28e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ff0ee4a74d53d373304bb1f772b1c2ee.png" xmlns="">0bGEUrA5lmkGy6tYtSVko6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

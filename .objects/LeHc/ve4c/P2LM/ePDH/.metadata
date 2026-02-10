@@ -1,0 +1,13 @@
+﻿{
+  "Name": "@omarfekry6850",
+  "Type": "Element",
+  "Id": "ePDHek_RDkOO8P3iPiQTdg",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/ePDHek_RDkOO8P3iPiQTdg",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/P2LMBAv5Yk6tiXVY_Lm07w",
+  "Created": "2025-11-03T23:15:08.7331319Z",
+  "Updated": "2025-11-03T23:15:08.7331319Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

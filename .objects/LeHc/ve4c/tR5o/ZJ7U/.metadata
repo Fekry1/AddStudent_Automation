@@ -1,0 +1,14 @@
+﻿{
+  "Name": "@OmarFekry-A1",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ZJ7Uyq8pA0aiSsmEom74TA",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/ZJ7Uyq8pA0aiSsmEom74TA",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/tR5oCnLBwkmJdBR7lRvehQ",
+  "Created": "2025-11-22T21:07:22.0941397Z",
+  "Updated": "2025-11-22T21:07:22.0941397Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

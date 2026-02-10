@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome (888) YouTube",
+  "Type": "App",
+  "Id": "LeHck-2AIEOm-5AcbzYCJA",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/LeHck-2AIEOm-5AcbzYCJA",
+  "Created": "2025-11-03T00:37:29.2045648Z",
+  "Updated": "2025-11-03T00:37:29.2045648Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

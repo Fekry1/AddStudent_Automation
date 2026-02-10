@@ -1,0 +1,6 @@
+{
+  "Name": "AddStudent",
+  "ProjectType": "Process",
+  "Description": "Add student to google sheet",
+  "MainFile": "Main.xaml"
+}

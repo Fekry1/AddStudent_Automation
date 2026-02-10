@@ -1,0 +1,13 @@
+﻿{
+  "Name": "svg",
+  "Type": "Element",
+  "Id": "7UEsQwIn9EyGuSoJNnI0dw",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/7UEsQwIn9EyGuSoJNnI0dw",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/AllVzrle406Z6gsQ0G0LKQ",
+  "Created": "2025-11-22T21:33:11.264436Z",
+  "Updated": "2025-11-22T21:33:11.264436Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-N6y2dXfBE-mNpNDuuM8bw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload" CVScreenId="b43c3893-9b4b-49c6-a373-410a5782e348" DesignTimeRectangle="1086, 481, 25, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;ytcp-app&amp;gt;ytcp-entity-page&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;ytcp-animatable&amp;gt;ytcp-content-section&amp;gt;ytcp-video-section&amp;gt;ytcp-video-section-content&amp;gt;div&amp;gt;ytcp-video-row&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ytcp-icon-button&amp;gt;yt-icon&amp;gt;span&amp;gt;div&amp;gt;svg' parentid='row-container' tag='svg' /&gt;" Guid="51c98c3e-fbe6-47a5-bb99-2bc23d1df65c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

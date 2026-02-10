@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Re3dpFI9RUCwJm5Ux1rmNw" Reference="wDpHw_6omkaShnTsPOtoxw/pGGkaiJE4kW_l6mCJ_EdxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com" CVScreenId="b9ae4e3a-2f05-4e6c-a584-7bee1834ea68" DesignTimeRectangle="1530, 216, 143, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='manage-account' tag='A' /&gt;" Guid="186ebca1-b633-4d7b-8498-15cadd01a004" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9047cc197ba0272a705b5d9c9964b799.png" xmlns="">0zKXGfAiylUiJhXEv-7nF7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

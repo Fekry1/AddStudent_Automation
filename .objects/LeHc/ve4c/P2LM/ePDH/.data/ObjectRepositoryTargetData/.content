@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qeCr9NcGE0qIjxcbggwQsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="youtube.com" CVScreenId="c32aaa6f-1ae9-497c-95d1-ff722d018f18" DesignTimeRectangle="1530, 178, 167, 28" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='channel-handle' tag='YT-FORMATTED-STRING' /&gt;" Guid="c5269805-0f8d-4b15-ad69-af76f67e547f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1198a26aa530f332bca6d84a07c26aab.png" xmlns="">0gxEQCErLqEGKap4QinC7hQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

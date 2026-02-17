@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fNGdY_rVgkqz6dgqcuSagw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload" CVScreenId="45b1c69d-8d98-4dec-a744-4033eec7f51b" DesignTimeRectangle="125, 219, 146, 36" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="a563c5f5-1c4a-4552-b97c-46392e3a8a81" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4ff98954edb3efbf4191640dd5ad175a.png" xmlns="">0xjhOH-QEYEuYFcAWpBrx8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

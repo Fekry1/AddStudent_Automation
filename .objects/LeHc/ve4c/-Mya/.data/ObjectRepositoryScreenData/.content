@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="yl-OIhB2rUGesfMcGStJBw" Reference="wDpHw_6omkaShnTsPOtoxw/-MyaN48L0UyaNPhapIxGTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="2552, -8, 1382, 736" BrowserType="Chrome" ContentHash="MfeMzmtn_EyvkvKTskV-VA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVFhH3Za9SgNBFIUPNomFrbU+QYqLpXaWqYSI2Ck+iIIEGwtfwEotrEXBPIBYiKCCnX+gNv7FRqsjR3eR7J1Vg2YGHPiKvefOmQOZ7F6QREpcITauEBtXiI0rxObzAVYhbIKwRcLWCNslbI+wI8LOCXsg7JGwJ8JYgjT13Gd7tFce8pKnvHVGpTMArEbYWcCwVyhc7SMArJ+wq0BTr7kgrKoAUwExFg0FWA4IsVhRgJ2AEIttBdBNLQrlDI6Tswtk34jXuudQAW4CQjlDdb6vg1NybM7r3XGtAM8BoZw8QL42W+Rw3ff9jLYCFItfUwyg9fJKNlfJgVHf/w1/EyBft3fkzHxX9+OfBPjlT5D8Eib/GyZ/EaV8FW+l/hgtKcB0QIjFpAJoILkMiL0mG0jSjGQ6PBvJOofSBmFNwjYIaxG2T9hJYShtBwxz8qFUvdpznHnIaz3z1hlVPxUnwhVi4wqxcYXYuEJs3gAwGPdNfuPsVQAAAABJRU5ErkJggg==" Reference="wDpHw_6omkaShnTsPOtoxw/-MyaN48L0UyaNPhapIxGTA" Selector="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" Url="https://studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists?filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22lastTimeUpdated%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="974ee3d3a7a3c98f790c8e9b12f50222.jpg" xmlns="">0d-9gY7vH50qSeDUAN2cJhg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

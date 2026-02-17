@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Channel content - YouTube Studio(1)",
+  "Type": "Screen",
+  "Id": "-MyaN48L0UyaNPhapIxGTA",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/-MyaN48L0UyaNPhapIxGTA",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/ve4cfFQZL0y8EXpcHpdtfA",
+  "Created": "2026-02-16T23:34:54.6527871Z",
+  "Updated": "2026-02-16T23:34:54.6527871Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

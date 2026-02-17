@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Programming paradigm",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "TZKcGDRiW0SMpfpQ0rWOoQ",
+  "Reference": "wDpHw_6omkaShnTsPOtoxw/TZKcGDRiW0SMpfpQ0rWOoQ",
+  "ParentRef": "wDpHw_6omkaShnTsPOtoxw/-MyaN48L0UyaNPhapIxGTA",
+  "Created": "2026-02-16T23:36:40.4829Z",
+  "Updated": "2026-02-16T23:36:40.4829Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

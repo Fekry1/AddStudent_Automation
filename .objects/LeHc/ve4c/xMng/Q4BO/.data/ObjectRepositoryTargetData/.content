@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Zz2UOCbdL0qWdSWeHyicOw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/playlist/PLX30FEx79JetB5K26liUTxYV6JuDiL3py/videos" CVScreenId="85ec8a2c-0208-4c17-adf9-0c384f4485c8" CvElementArea="889, 550, 69, 40" CvTextArea="906, 563, 33, 13" CvTextArgument="Done" CvType="Button" DesignTimeRectangle="891, 553, 64, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Done' tag='BUTTON' type='' class='ytcpButtonShapeImplHost ytcpButtonShapeImpl--filled ytcpButtonShapeImpl--size-m ytcpButtonShapeImpl--disabled ytcpButtonShapeImpl--enable-backdrop-filter-experiment' aaname='Done' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Done' /&gt;" Guid="0b001cba-f89f-4c2b-a5ac-d6a41f2af447" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Videos - YouTube Studio' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="85ec8a2c-0208-4c17-adf9-0c384f4485c8" CvElementArea="889, 550, 69, 40" CvTextArea="906, 563, 33, 13" CvTextArgument="Done" CvType="Button" DesignTimeRectangle="907, 553, 32, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='done-button' tag='DIV' type='' class='ytcpButtonShapeImpl__button-text-content' aaname='Done' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Done' /&gt;" Guid="acdb9873-fb68-4aa1-940a-f489244e3b3b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="831680c86138d6e37142add7b7b9364b.png" xmlns="">0DoY9b6P4l0KdrcSqGVagFA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

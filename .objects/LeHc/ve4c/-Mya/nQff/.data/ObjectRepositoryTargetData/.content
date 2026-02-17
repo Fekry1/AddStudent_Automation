@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OQWjrjr9LUC7LzamqMIOLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/playlist/PLX30FEx79JetB5K26liUTxYV6JuDiL3py/videos" CVScreenId="7a50377f-1d1b-44c0-8936-9f442b36e81a" DesignTimeRectangle="1137, 636, 74, 36" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='yt-spec-touch-feedback-shape__fill' parentid='cancel-button' tag='DIV' /&gt;" Guid="02420051-cf0c-4350-96d2-cda41dbda2ab" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5bbd5dde434d177fad24ae362086bbb9.png" xmlns="">0T0s1o9nZKUutAH5safm7xA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

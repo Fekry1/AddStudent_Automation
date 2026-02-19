@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="PlaylistLink" Type="OutArgument(ui:UiElement)" />
+    <x:Property Name="out_strSubjectName" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -107,13 +108,13 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ChoosePlaylist" sap:VirtualizedContainerService.HintSize="1112,2945.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ChoosePlaylist" sap:VirtualizedContainerService.HintSize="1019.3333333333333,2856" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Template for project organization" sap:VirtualizedContainerService.HintSize="626,2922.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Template for project organization" sap:VirtualizedContainerService.HintSize="626,2833.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,49 +122,49 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="592,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start process playlist select&quot;]" />
-      <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="592,2496" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
+      <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="592,2406.6666666666665" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
         <ui:RetryScope.ActivityBody>
           <ActivityAction>
-            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="590,2288.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="590,2199.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556,2224.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556,2139.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
-                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="554,2001.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="554,1924" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Precondition" sap:VirtualizedContainerService.HintSize="520,990" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="Precondition" sap:VirtualizedContainerService.HintSize="520,958" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState DisplayName="Check App State 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,890" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V5">
+                      <uix:NCheckState DisplayName="Check App State 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,866" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V5">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Studio launched and you can head to playlists&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Studio launched and you can head to playlists&quot;]" />
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,363.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,351.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;Studio logo not detected&quot;]" />
-                            <Throw Exception="[new Exception(&quot;Studio logo not detected&quot;)]" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;Studio logo not detected&quot;]" />
+                            <Throw Exception="[new Exception(&quot;Studio logo not detected&quot;)]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_1" />
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>
@@ -171,42 +172,39 @@
                         </uix:NCheckState.Target>
                       </uix:NCheckState>
                     </Sequence>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="520,826" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="520,792.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Channel content - YouTube Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,726" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="a7a22a6a-ff88-454c-bc96-6b3a5a99a786" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Browser Chrome: *- YouTube Studio" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,700.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsDisplayNameAuto="True" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="a7a22a6a-ff88-454c-bc96-6b3a5a99a786" Version="V2" WindowResize="Maximize">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,527.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,506" sap2010:WorkflowViewState.IdRef="Sequence_12">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Playlists'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7a22a6a-ff88-454c-bc96-6b3a5a99a786" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Playlists'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7a22a6a-ff88-454c-bc96-6b3a5a99a786" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload" CVScreenId="00df13b6-c5b0-4f10-8c92-29e0bbbbbc54" ContentHash="84YaJH9jaEqA1V5dyeFrqw" DesignTimeRectangle="1138, 394, 85, 72" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='playlist-list-tab' /&gt;" Guid="ced7475e-5b20-4354-9345-7b7640761d20" InformativeScreenshot="7666157282bc137e1af4c47714dc7075.png" Reference="wDpHw_6omkaShnTsPOtoxw/dCeU1eQk3064NePeRt2r3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
                               </uix:NClick>
-                              <Sequence DisplayName="Choose which playlist" sap:VirtualizedContainerService.HintSize="450,264" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                                <Sequence.Variables>
-                                  <Variable x:TypeArguments="x:String" Name="strPlaylistName" />
-                                </Sequence.Variables>
+                              <Sequence DisplayName="Choose which playlist" sap:VirtualizedContainerService.HintSize="450,250.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PickPlaylist - Invoke Workflow File (Modules\Youtube\PickPlaylist.xaml)" sap:VirtualizedContainerService.HintSize="416,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Modules\Youtube\PickPlaylist.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PickPlaylist - Invoke Workflow File (Modules\Youtube\PickPlaylist.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Modules\Youtube\PickPlaylist.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_strSubjectName">[out_strSubjectName]</OutArgument>
                                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
-                                    <OutArgument x:TypeArguments="x:String" x:Key="strPlaylist">[strPlaylistName]</OutArgument>
                                     <OutArgument x:TypeArguments="ui:UiElement" x:Key="PlaylistLink">[PlaylistLink]</OutArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
@@ -222,11 +220,18 @@
                           </ActivityFunc>
                         </uix:NApplicationCard.OCREngine>
                         <uix:NApplicationCard.TargetApp>
-                          <uix:TargetApp Area="-11, -11, 2582, 1550" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVFhH3Za9SgNBFIUPNomFrbU+QYqLpXaWqYSI2Ck+iIIEGwtfwEotrEXBPIBYiKCCnX+gNv7FRqsjR3eR7J1Vg2YGHPiKvefOmQOZ7F6QREpcITauEBtXiI0rxObzAVYhbIKwRcLWCNslbI+wI8LOCXsg7JGwJ8JYgjT13Gd7tFce8pKnvHVGpTMArEbYWcCwVyhc7SMArJ+wq0BTr7kgrKoAUwExFg0FWA4IsVhRgJ2AEIttBdBNLQrlDI6Tswtk34jXuudQAW4CQjlDdb6vg1NybM7r3XGtAM8BoZw8QL42W+Rw3ff9jLYCFItfUwyg9fJKNlfJgVHf/w1/EyBft3fkzHxX9+OfBPjlT5D8Eib/GyZ/EaV8FW+l/hgtKcB0QIjFpAJoILkMiL0mG0jSjGQ6PBvJOofSBmFNwjYIaxG2T9hJYShtBwxz8qFUvdpznHnIaz3z1hlVPxUnwhVi4wqxcYXYuEJs3gAwGPdNfuPsVQAAAABJRU5ErkJggg==" InformativeScreenshot="0dffe5a708c2e5c860ee402cecee4c9c.jpg" Selector="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" Url="https://studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload?filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" Version="V2" />
+                          <uix:TargetApp Area="-11, -11, 2582, 1550" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVFhH3Za9SgNBFIUPNomFrbU+QYqLpXaWqYSI2Ck+iIIEGwtfwEotrEXBPIBYiKCCnX+gNv7FRqsjR3eR7J1Vg2YGHPiKvefOmQOZ7F6QREpcITauEBtXiI0rxObzAVYhbIKwRcLWCNslbI+wI8LOCXsg7JGwJ8JYgjT13Gd7tFce8pKnvHVGpTMArEbYWcCwVyhc7SMArJ+wq0BTr7kgrKoAUwExFg0FWA4IsVhRgJ2AEIttBdBNLQrlDI6Tswtk34jXuudQAW4CQjlDdb6vg1NybM7r3XGtAM8BoZw8QL42W+Rw3ff9jLYCFItfUwyg9fJKNlfJgVHf/w1/EyBft3fkzHxX9+OfBPjlT5D8Eib/GyZ/EaV8FW+l/hgtKcB0QIjFpAJoILkMiL0mG0jSjGQ6PBvJOofSBmFNwjYIaxG2T9hJYShtBwxz8qFUvdpznHnIaz3z1hlVPxUnwhVi4wqxcYXYuEJs3gAwGPdNfuPsVQAAAABJRU5ErkJggg==" InformativeScreenshot="0dffe5a708c2e5c860ee402cecee4c9c.jpg" Selector="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" Url="https://studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/videos/upload?filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" Version="V2">
+                            <uix:TargetApp.Arguments>
+                              <InArgument x:TypeArguments="x:String" />
+                            </uix:TargetApp.Arguments>
+                            <uix:TargetApp.WorkingDirectory>
+                              <InArgument x:TypeArguments="x:String" />
+                            </uix:TargetApp.WorkingDirectory>
+                          </uix:TargetApp>
                         </uix:NApplicationCard.TargetApp>
                       </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="Postcondition" sap:VirtualizedContainerService.HintSize="520,121.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Postcondition" sap:VirtualizedContainerService.HintSize="520,113.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

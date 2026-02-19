@@ -1,5 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="ConfirmationEmail" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umamm="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Models;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="in_strSubjectName" Type="InArgument(x:String)" />
     <x:Property Name="in_intVideoAmount" Type="InArgument(x:Int32)" />
   </x:Members>
   <VisualBasic.Settings>
@@ -102,44 +103,44 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ConfirmationEmail" sap:VirtualizedContainerService.HintSize="1112,2640.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ConfirmationEmail" sap:VirtualizedContainerService.HintSize="1112,2561.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Confirmation Email" sap:VirtualizedContainerService.HintSize="556,2618" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Confirmation Email" sap:VirtualizedContainerService.HintSize="617.3333333333334,2538.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message - Start of Confirmation " sap:VirtualizedContainerService.HintSize="522,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Confirmation Email start sending&quot;]" />
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="522,2191.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <ui:LogMessage DisplayName="Log Message - Start of Confirmation " sap:VirtualizedContainerService.HintSize="583.3333333333334,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Confirmation Email start sending&quot;]" />
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="583.3333333333334,2112" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,1622" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="581.3333333333334,1562.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="486,1558" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="547.3333333333334,1502.6666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_1">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
-                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="484,1356" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="545.3333333333334,1304.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Precondition" sap:VirtualizedContainerService.HintSize="450,130.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Precondition" sap:VirtualizedContainerService.HintSize="511.3333333333333,122.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Sequence>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,1040" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="511.3333333333333,1008.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="htmlTemplate" />
                         <Variable x:TypeArguments="x:String" Name="strStdEmail" />
@@ -149,21 +150,35 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="stdEmail" CacheStrategy="None" DisplayName="Get Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,191.33333333333334" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+                      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="stdEmail" CacheStrategy="None" DisplayName="Get Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="477.3333333333333,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
                         <ui:GetRobotAsset.Value>
                           <OutArgument x:TypeArguments="x:String">[strStdEmail]</OutArgument>
                         </ui:GetRobotAsset.Value>
                       </ui:GetRobotAsset>
-                      <ui:ReadTextFile File="{x:Null}" Content="[htmlTemplate]" DisplayName="Read Text File" FileName="C:/Personal/Work/UiPath/Email.html" sap:VirtualizedContainerService.HintSize="416,128" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                      <Assign sap:VirtualizedContainerService.HintSize="416,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_1">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[htmlTemplate]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">[htmlTemplate.Replace("{{VIDEO_COUNT}}", in_intVideoAmount.ToString)]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                      <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[htmlTemplate]" ConnectionId="67d3a098-6d58-4078-995a-881bbd646d53" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,440" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Welcome to Machine Learning Course" To="[New String() { strStdEmail }]" UseConnectionService="True" UseSharedMailbox="False">
+                      <ui:ReadTextFile File="{x:Null}" Content="[htmlTemplate]" DisplayName="Read Text File" FileName="C:/Personal/Work/UiPath/Email.html" sap:VirtualizedContainerService.HintSize="477.3333333333333,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="477.3333333333333,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                        <ui:MultipleAssign.AssignOperations>
+                          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[htmlTemplate]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[htmlTemplate.Replace("{{VIDEO_COUNT}}", in_intVideoAmount.ToString)]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                              <ui:AssignOperation.To>
+                                <OutArgument x:TypeArguments="x:String">[htmlTemplate]</OutArgument>
+                              </ui:AssignOperation.To>
+                              <ui:AssignOperation.Value>
+                                <InArgument x:TypeArguments="x:String">[htmlTemplate.Replace("Machine Learning", in_strSubjectName)]</InArgument>
+                              </ui:AssignOperation.Value>
+                            </ui:AssignOperation>
+                          </scg:List>
+                        </ui:MultipleAssign.AssignOperations>
+                      </ui:MultipleAssign>
+                      <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[htmlTemplate]" ConnectionId="67d3a098-6d58-4078-995a-881bbd646d53" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="477.3333333333333,436" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Welcome to &quot;+ in_strSubjectName +&quot; Course&quot;]" To="[New String() { strStdEmail }]" UseConnectionService="True" UseSharedMailbox="False">
                         <umam:SendMailConnections.AttachmentsBackup>
                           <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
                             <usau:BackupSlot.BackupValues>
@@ -191,7 +206,7 @@
                         </umam:SendMailConnections.MailboxArg>
                       </umam:SendMailConnections>
                     </Sequence>
-                    <Sequence DisplayName="Postcondition" sap:VirtualizedContainerService.HintSize="450,121.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence DisplayName="Postcondition" sap:VirtualizedContainerService.HintSize="511.3333333333333,113.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -213,20 +228,20 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,296.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="581.3333333333334,284.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message - SE" sap:VirtualizedContainerService.HintSize="486,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[exception.Message]" />
-                <Rethrow sap:VirtualizedContainerService.HintSize="486,52" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                <ui:LogMessage DisplayName="Log Message - SE" sap:VirtualizedContainerService.HintSize="547.3333333333334,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[exception.Message]" />
+                <Rethrow sap:VirtualizedContainerService.HintSize="547.3333333333334,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
               </Sequence>
             </ActivityAction>
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="520,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="581.3333333333334,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -235,7 +250,7 @@
           </Sequence>
         </TryCatch.Finally>
       </TryCatch>
-      <ui:LogMessage DisplayName="Log Message - End of process" sap:VirtualizedContainerService.HintSize="522,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Confirmation mail sent successfully&quot;]" />
+      <ui:LogMessage DisplayName="Log Message - End of process" sap:VirtualizedContainerService.HintSize="583.3333333333334,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Confirmation mail sent successfully&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>

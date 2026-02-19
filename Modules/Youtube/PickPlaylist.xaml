@@ -1,7 +1,7 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="PickPlaylist" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="out_strSubjectName" Type="OutArgument(x:String)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
-    <x:Property Name="strPlaylist" Type="OutArgument(x:String)" />
     <x:Property Name="PlaylistLink" Type="OutArgument(ui:UiElement)" />
   </x:Members>
   <VisualBasic.Settings>
@@ -102,41 +102,45 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PickPlaylist" sap:VirtualizedContainerService.HintSize="1112,1086" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PickPlaylist" sap:VirtualizedContainerService.HintSize="1010,3704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strPlaylistName" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Pick the intended playlist" sap:VirtualizedContainerService.HintSize="486,1063.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Pick the intended playlist" sap:VirtualizedContainerService.HintSize="594,1060.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InputDialog Options="{x:Null}" DisplayName="PlaylistOptions" sap:VirtualizedContainerService.HintSize="452,332.6666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Pick one of the following playlists" OptionsString="[in_Config(&quot;Playlists&quot;).ToString]" Title="Playlist Picker" TopMost="False">
         <ui:InputDialog.Result>
-          <OutArgument x:TypeArguments="x:String">[strPlaylist]</OutArgument>
+          <OutArgument x:TypeArguments="x:String">[strPlaylistName]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Channel content - YouTube Studio(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,648" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OutUiElement="[Playlistlink]" ScopeGuid="26fab132-d65e-4089-92b2-9e1394ef21fe" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Channel content - YouTube Studio(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,636" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" OutUiElement="[PlaylistLink]" ScopeGuid="26fab132-d65e-4089-92b2-9e1394ef21fe" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,453.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,441.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Programming paradigm'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="26fab132-d65e-4089-92b2-9e1394ef21fe" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Programming paradigm'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="26fab132-d65e-4089-92b2-9e1394ef21fe" Version="V5">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists" CVScreenId="ab71b603-6743-4855-9500-f116e0879c81" ContentHash="fMbyb0nH7UynV4huvQmi8A" DesignTimeRectangle="432, 324, 137, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='playlist-title-link' tag='A' aaname='*{0}*' /&gt;&quot;, strPlaylist)]" Guid="207b6f8e-dedc-4f29-a8f2-80f0d17bf8e6" InformativeScreenshot="32038a53d51f08e27ba39470e7459832.png" Reference="wDpHw_6omkaShnTsPOtoxw/TZKcGDRiW0SMpfpQ0rWOoQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists" CVScreenId="ab71b603-6743-4855-9500-f116e0879c81" ContentHash="ecw5VSwLF06lXGGYQb2LzA" DesignTimeRectangle="432, 424, 137, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='playlist-title-link' tag='A' aaname='*{0}*' /&gt;&quot;, strPlaylistName)]" Guid="207b6f8e-dedc-4f29-a8f2-80f0d17bf8e6" InformativeScreenshot="3189fbc3f55617739b245daf892c20ef.png" Reference="wDpHw_6omkaShnTsPOtoxw/TZKcGDRiW0SMpfpQ0rWOoQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Videos'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="26fab132-d65e-4089-92b2-9e1394ef21fe" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Videos'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="26fab132-d65e-4089-92b2-9e1394ef21fe" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="studio.youtube.com/playlist/PLX30FEx79JeuiveCjYSaQ6-D_SXXee8rl/edit" CVScreenId="88d9e961-a92d-454c-89f9-b1a3eeb71c61" ContentHash="-cBV_lielUWiAeMbS3N1kA" DesignTimeRectangle="20, 505, 231, 48" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='menu-paper-icon-item-1' tag='TP-YT-PAPER-ICON-ITEM' visibleinnertext='Videos' /&gt;" Guid="db26c5cf-0554-49f2-b876-0b8fb8da8c7a" InformativeScreenshot="2bf2a8b95c99434c3858eae394e3d201.png" Reference="wDpHw_6omkaShnTsPOtoxw/eQYBK14kiE-p3J8pZVIZow" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
@@ -152,7 +156,7 @@
           </ActivityFunc>
         </uix:NApplicationCard.OCREngine>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="2552, -8, 1382, 736" BrowserType="Chrome" ContentHash="yl-OIhB2rUGesfMcGStJBw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVFhH3Za9SgNBFIUPNomFrbU+QYqLpXaWqYSI2Ck+iIIEGwtfwEotrEXBPIBYiKCCnX+gNv7FRqsjR3eR7J1Vg2YGHPiKvefOmQOZ7F6QREpcITauEBtXiI0rxObzAVYhbIKwRcLWCNslbI+wI8LOCXsg7JGwJ8JYgjT13Gd7tFce8pKnvHVGpTMArEbYWcCwVyhc7SMArJ+wq0BTr7kgrKoAUwExFg0FWA4IsVhRgJ2AEIttBdBNLQrlDI6Tswtk34jXuudQAW4CQjlDdb6vg1NybM7r3XGtAM8BoZw8QL42W+Rw3ff9jLYCFItfUwyg9fJKNlfJgVHf/w1/EyBft3fkzHxX9+OfBPjlT5D8Eib/GyZ/EaV8FW+l/hgtKcB0QIjFpAJoILkMiL0mG0jSjGQ6PBvJOofSBmFNwjYIaxG2T9hJYShtBwxz8qFUvdpznHnIaz3z1hlVPxUnwhVi4wqxcYXYuEJs3gAwGPdNfuPsVQAAAABJRU5ErkJggg==" InformativeScreenshot="974ee3d3a7a3c98f790c8e9b12f50222.jpg" Reference="wDpHw_6omkaShnTsPOtoxw/-MyaN48L0UyaNPhapIxGTA" Selector="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" Url="https://studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists?filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22lastTimeUpdated%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" Version="V2">
+          <uix:TargetApp Area="2552, -8, 1382, 736" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVFhH3Za9SgNBFIUPNomFrbU+QYqLpXaWqYSI2Ck+iIIEGwtfwEotrEXBPIBYiKCCnX+gNv7FRqsjR3eR7J1Vg2YGHPiKvefOmQOZ7F6QREpcITauEBtXiI0rxObzAVYhbIKwRcLWCNslbI+wI8LOCXsg7JGwJ8JYgjT13Gd7tFce8pKnvHVGpTMArEbYWcCwVyhc7SMArJ+wq0BTr7kgrKoAUwExFg0FWA4IsVhRgJ2AEIttBdBNLQrlDI6Tswtk34jXuudQAW4CQjlDdb6vg1NybM7r3XGtAM8BoZw8QL42W+Rw3ff9jLYCFItfUwyg9fJKNlfJgVHf/w1/EyBft3fkzHxX9+OfBPjlT5D8Eib/GyZ/EaV8FW+l/hgtKcB0QIjFpAJoILkMiL0mG0jSjGQ6PBvJOofSBmFNwjYIaxG2T9hJYShtBwxz8qFUvdpznHnIaz3z1hlVPxUnwhVi4wqxcYXYuEJs3gAwGPdNfuPsVQAAAABJRU5ErkJggg==" InformativeScreenshot="974ee3d3a7a3c98f790c8e9b12f50222.jpg" Selector="&lt;html app='chrome.exe' title='*- YouTube Studio' /&gt;" Url="https://studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists?filter=%5B%5D&amp;sort=%7B%22columnType%22%3A%22lastTimeUpdated%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D" Version="V2">
             <uix:TargetApp.Arguments>
               <InArgument x:TypeArguments="x:String" />
             </uix:TargetApp.Arguments>
@@ -162,6 +166,141 @@
           </uix:TargetApp>
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
+    </Sequence>
+    <Sequence sap2010:Annotation.AnnotationText="Here we will create condition to take the name of the course in an argument so we use it later in Email confirmation " DisplayName="Placeholder for Email" sap:VirtualizedContainerService.HintSize="594,2620.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If Condition="[strPlaylistName=&quot;Programming paradigm&quot;]" sap:VirtualizedContainerService.HintSize="560,2493.3333333333335" sap2010:WorkflowViewState.IdRef="If_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,404" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;The current playlist that the student is going to subscribe to is: Programming paradigm&quot;]" />
+            <Assign sap:VirtualizedContainerService.HintSize="524,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[out_strSubjectName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">["Programming paradigm"]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="558,1958.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[strPlaylistName=&quot;Network servers and infrastructure&quot;]" sap:VirtualizedContainerService.HintSize="524,1898.6666666666667" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="522,404" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;The current playlist that the student is going to subscribe to is: Network servers and infrastructure&quot;]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="488,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_strSubjectName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["Network servers and infrastructure"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,1364" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[strPlaylistName=&quot;26 - Machine Learning&quot;]" sap:VirtualizedContainerService.HintSize="488,1304" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,404" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;The current playlist that the student is going to subscribe to is: Machine Learning&quot;]" />
+                        <Assign sap:VirtualizedContainerService.HintSize="452,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_strSubjectName]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">["Machine Learning"]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,769.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[strPlaylistName=&quot;Machine Learning - updated&quot;]" sap:VirtualizedContainerService.HintSize="452,709.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,404" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;The current playlist that the student is going to subscribe to is: Machine Learning&quot;]" />
+                              <Assign sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[out_strSubjectName]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["Machine Learning"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,174.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Throw Exception="[New Exception(&quot;No playlist with this name&quot;)]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </If.Else>
+      </If>
     </Sequence>
   </Sequence>
 </Activity>

@@ -141,13 +141,13 @@
       <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpenExcel" sap:VirtualizedContainerService.HintSize="1112,5137.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenExcel" sap:VirtualizedContainerService.HintSize="1112,4984" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Description: Add studnt information to sheet" DisplayName="Add studnt " sap:VirtualizedContainerService.HintSize="618.6666666666666,5114.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Description: Add studnt information to sheet" DisplayName="Add studnt " sap:VirtualizedContainerService.HintSize="618.6666666666666,4961.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -156,18 +156,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message - Start of process" sap:VirtualizedContainerService.HintSize="584.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Starting google sheet&quot;]" />
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="584.6666666666666,4657.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="584.6666666666666,4504" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="582.6666666666666,4088" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="582.6666666666666,3946.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="548.6666666666666,4024" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+            <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="548.6666666666666,3886.6666666666665" sap2010:WorkflowViewState.IdRef="RetryScope_1">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
-                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="546.6666666666666,3822" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="545.3333333333334,3688.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Boolean" Default="False" Name="SheetExist" />
                       <Variable x:TypeArguments="sd3:DataTable" Name="dtDataTable" />
@@ -179,7 +179,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Precondition" sap:VirtualizedContainerService.HintSize="512.6666666666666,61.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence DisplayName="Precondition" sap:VirtualizedContainerService.HintSize="511.3333333333333,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -256,34 +256,34 @@
                         </uix:NApplicationCard.TargetApp>
                       </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="512.6666666666666,1838" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="511.3333333333333,1775.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[SheetExist = True]" sap:VirtualizedContainerService.HintSize="452,1738" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If Condition="[SheetExist = True]" sap:VirtualizedContainerService.HintSize="452,1683.3333333333333" sap2010:WorkflowViewState.IdRef="If_1">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,1508.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,1462" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Name" sap:VirtualizedContainerService.HintSize="416,282" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the name of the student" Title="Student name" TopMost="False">
+                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Name" sap:VirtualizedContainerService.HintSize="416,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the name of the student" Title="Student name" TopMost="False">
                               <ui:InputDialog.Result>
                                 <OutArgument x:TypeArguments="x:String">[strStdName]</OutArgument>
                               </ui:InputDialog.Result>
                             </ui:InputDialog>
-                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Email" sap:VirtualizedContainerService.HintSize="416,282" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the email of the student" Title="Student email" TopMost="False">
+                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Email" sap:VirtualizedContainerService.HintSize="416,278" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the email of the student" Title="Student email" TopMost="False">
                               <ui:InputDialog.Result>
                                 <OutArgument x:TypeArguments="x:String">[strStdEmail]</OutArgument>
                               </ui:InputDialog.Result>
                             </ui:InputDialog>
-                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdName" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,244" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[strStdName]" />
-                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdEmail" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,244" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[strStdEmail]" />
-                            <uga:WriteRowConnections AllFields="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" ArrayRow="[{strStdName,strStdEmail}]" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of Machine learning start-nov" BrowserItemId="https://docs.google.com/spreadsheets/d/1L4LoSDuUEPybjPD80XkCoVuiGK1APX3VWSjN8Kcj2Sg/edit?usp=drivesdk" ConnectionId="f6e85bc0-7a1c-4fa3-82a5-1de88e09ebfb" DataType="ArrayRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="416,392.6666666666667" sap2010:WorkflowViewState.IdRef="WriteRowConnections_3" ItemSelectionMode="Browse" Range="'الورقة1'!C5:D56" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdName" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[strStdName]" />
+                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdEmail" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[strStdEmail]" />
+                            <uga:WriteRowConnections AllFields="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" ArrayRow="[{strStdName,strStdEmail}]" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of Machine learning start-nov" BrowserItemId="https://docs.google.com/spreadsheets/d/1L4LoSDuUEPybjPD80XkCoVuiGK1APX3VWSjN8Kcj2Sg/edit?usp=drivesdk" ConnectionId="f6e85bc0-7a1c-4fa3-82a5-1de88e09ebfb" DataType="ArrayRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="416,387.3333333333333" sap2010:WorkflowViewState.IdRef="WriteRowConnections_3" ItemSelectionMode="Browse" Range="'الورقة1'!C5:D56" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
                               <uga:WriteRowConnections.FileIdBackup>
                                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                                   <usau:BackupSlot.BackupValues>
@@ -323,7 +323,7 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -333,7 +333,7 @@
                         </If.Else>
                       </If>
                     </Sequence>
-                    <Sequence sap2010:Annotation.AnnotationText="Make sure that the name and email inserted successfully" DisplayName="Postcondition" sap:VirtualizedContainerService.HintSize="512.6666666666666,1858.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <Sequence sap2010:Annotation.AnnotationText="Make sure that the name and email inserted successfully" DisplayName="Postcondition" sap:VirtualizedContainerService.HintSize="511.3333333333333,1796" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="strLastEmail" />
                         <Variable x:TypeArguments="x:String" Name="strLastName" />
@@ -346,7 +346,7 @@
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:ReadRangeConnections x:TypeArguments="sd2:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of Machine learning start-nov" BrowserItemId="https://docs.google.com/spreadsheets/d/1L4LoSDuUEPybjPD80XkCoVuiGK1APX3VWSjN8Kcj2Sg/edit?usp=drivesdk" ConnectionId="f6e85bc0-7a1c-4fa3-82a5-1de88e09ebfb" DisplayName="Read Range" HasHeaders="False" sap:VirtualizedContainerService.HintSize="478.6666666666667,302.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="'الورقة1'!C5:D56" ReadAs="Values" Result="[dtStdTable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+                      <uga:ReadRangeConnections x:TypeArguments="sd2:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of Machine learning start-nov" BrowserItemId="https://docs.google.com/spreadsheets/d/1L4LoSDuUEPybjPD80XkCoVuiGK1APX3VWSjN8Kcj2Sg/edit?usp=drivesdk" ConnectionId="f6e85bc0-7a1c-4fa3-82a5-1de88e09ebfb" DisplayName="Read Range" HasHeaders="False" sap:VirtualizedContainerService.HintSize="477.3333333333333,292" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="'الورقة1'!C5:D56" ReadAs="Values" Result="[dtStdTable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
                         <uga:ReadRangeConnections.ColumnNames>
                           <x:Array Type="x:String">
                             <x:String>Column C</x:String>
@@ -373,7 +373,7 @@
                           <ugsm:RangeMetadataSlim ColumnStart="3" RangeType="Range" />
                         </uga:ReadRangeConnections.RangeMetadata>
                       </uga:ReadRangeConnections>
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,214.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="477.3333333333333,210.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -403,47 +403,47 @@
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <If Condition="[strLastName.Equals(strStdName)]" sap:VirtualizedContainerService.HintSize="478.6666666666667,614.6666666666666" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If Condition="[strLastName.Equals(strStdName)]" sap:VirtualizedContainerService.HintSize="477.3333333333333,594.6666666666666" sap2010:WorkflowViewState.IdRef="If_3">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_21">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[strLastName+&quot; is inserted successfully&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[strLastName+&quot; is inserted successfully&quot;]" />
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_22">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[&quot;Name doesn't exist in the sheet&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[&quot;Name doesn't exist in the sheet&quot;]" />
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[strLastEmail.Equals(strStdEmail)]" sap:VirtualizedContainerService.HintSize="478.6666666666667,605.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If Condition="[strLastEmail.Equals(strStdEmail)]" sap:VirtualizedContainerService.HintSize="477.3333333333333,585.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_23">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[strLastEmail+&quot; is inserted successfully&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[strLastEmail+&quot; is inserted successfully&quot;]" />
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_24">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Error" Message="[&quot;Email doesn't exist in the sheet&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Error" Message="[&quot;Email doesn't exist in the sheet&quot;]" />
                           </Sequence>
                         </If.Else>
                       </If>
@@ -463,13 +463,13 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="582.6666666666666,296.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="582.6666666666666,288.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message - SE" sap:VirtualizedContainerService.HintSize="548.6666666666666,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[exception.Message]" />
+                <ui:LogMessage DisplayName="Log Message - SE" sap:VirtualizedContainerService.HintSize="548.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[exception.Message]" />
                 <Rethrow sap:VirtualizedContainerService.HintSize="548.6666666666666,52" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
               </Sequence>
             </ActivityAction>

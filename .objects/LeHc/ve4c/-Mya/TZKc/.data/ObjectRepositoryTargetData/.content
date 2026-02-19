@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="fMbyb0nH7UynV4huvQmi8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="ecw5VSwLF06lXGGYQb2LzA" Reference="wDpHw_6omkaShnTsPOtoxw/TZKcGDRiW0SMpfpQ0rWOoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists" CVScreenId="ab71b603-6743-4855-9500-f116e0879c81" DesignTimeRectangle="432, 324, 137, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='playlist-title-link' tag='A' aaname='*{0}*' /&gt;&quot;, strPlaylist)]" Guid="207b6f8e-dedc-4f29-a8f2-80f0d17bf8e6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="32038a53d51f08e27ba39470e7459832.png" xmlns="">07e70wfdst0SkwZrX-S-MMA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="studio.youtube.com/channel/UCXzgk49QUQw2tnXOYElXjDw/content/playlists" CVScreenId="ab71b603-6743-4855-9500-f116e0879c81" DesignTimeRectangle="432, 424, 137, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='playlist-title-link' tag='A' aaname='*{0}*' /&gt;&quot;, strPlaylistName)]" Guid="207b6f8e-dedc-4f29-a8f2-80f0d17bf8e6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Channel content - YouTube Studio' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3189fbc3f55617739b245daf892c20ef.png" xmlns="">0l4fNg9-Q802zHJW-W95s7Q</imageRef>
     </TargetAnchorable>
     <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
-      <ObjectRepositoryVariableData IsVariable="False" Name="strPlaylist" />
+      <ObjectRepositoryVariableData DefaultValue="{}{{strPlaylist}}" Name="strPlaylistName" />
     </scg:List>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

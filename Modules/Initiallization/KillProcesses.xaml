@@ -110,7 +110,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="KillProcesses" sap:VirtualizedContainerService.HintSize="1112,928.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="KillProcesses" sap:VirtualizedContainerService.HintSize="1112,908.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[{ &quot;Chrome&quot;,&quot;notepad&quot; }]" Name="arr_ProcessesToBeKilled" />
       <Variable x:TypeArguments="ui:UiElement" Name="CMD" />
@@ -120,32 +120,32 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Command Prompt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,906" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OutUiElement="[CMD]" ScopeGuid="7c5bf674-fe5b-4775-bc55-8e4718ab43ba" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Command Prompt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,886" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OutUiElement="[CMD]" ScopeGuid="7c5bf674-fe5b-4775-bc55-8e4718ab43ba" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,658.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,638.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="452,594.6666666666666" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arr_ProcessesToBeKilled]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="452,578.6666666666666" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arr_ProcessesToBeKilled]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,468" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,456" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="0" DelayBefore="0" DelayBetweenKeys="0" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,232.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InUiElement="[CMD]" ScopeIdentifier="7c5bf674-fe5b-4775-bc55-8e4718ab43ba" Text="[&quot;taskkill /F /IM &quot;+currentText+&quot;.exe[k(enter)]&quot;]" Version="V5" />
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[currentText + &quot; Closed successfully&quot;]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="0" DelayBefore="0" DelayBetweenKeys="0" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,228.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InUiElement="[CMD]" ScopeIdentifier="7c5bf674-fe5b-4775-bc55-8e4718ab43ba" Text="[&quot;taskkill /F /IM &quot;+currentText+&quot;.exe[k(enter)]&quot;]" Version="V5" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[currentText + &quot; Closed successfully&quot;]" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEach.Body>

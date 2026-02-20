@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DzA6R8DG_UmjE0e90c63rA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="web.whatsapp.com" CVScreenId="613954c9-7e4b-47db-a8ac-e775606c5fa6" CvType="AnyWordGroup" DesignTimeRectangle="553, 140, 83, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='main' tag='SPAN' /&gt;" Guid="2be030da-6342-4631-9f2d-ace16a467669" ScopeSelectorArgument="&lt;html app='chrome.exe' title='WhatsApp' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="613954c9-7e4b-47db-a8ac-e775606c5fa6" CvTextArea="638, 141, 41, 20" CvTextArgument="(You)" CvType="Text" DesignTimeRectangle="636, 140, 42, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='(You)' parentid='main' tag='SPAN' type='' class='xjuopq5 xulcptl _ao3e' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='(You)' /&gt;" Guid="824cae05-b1d7-4139-90ba-9bd85d51c1f1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="780445aadaaea5d7859c7007b5a0e93b.png" xmlns="">0Fx9YVxVFaEmIBjZzfTGB2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

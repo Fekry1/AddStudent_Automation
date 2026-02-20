@@ -1,6 +1,8 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="OpenExcel" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_strStdName" Type="OutArgument(x:String)" />
+    <x:Property Name="out_strStdEmail" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -141,7 +143,7 @@
       <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpenExcel" sap:VirtualizedContainerService.HintSize="1112,4984" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenExcel" sap:VirtualizedContainerService.HintSize="1010,4984" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -171,8 +173,6 @@
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Boolean" Default="False" Name="SheetExist" />
                       <Variable x:TypeArguments="sd3:DataTable" Name="dtDataTable" />
-                      <Variable x:TypeArguments="x:String" Name="strStdName" />
-                      <Variable x:TypeArguments="x:String" Name="strStdEmail" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -273,17 +273,17 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Name" sap:VirtualizedContainerService.HintSize="416,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the name of the student" Title="Student name" TopMost="False">
                               <ui:InputDialog.Result>
-                                <OutArgument x:TypeArguments="x:String">[strStdName]</OutArgument>
+                                <OutArgument x:TypeArguments="x:String">[out_strStdName]</OutArgument>
                               </ui:InputDialog.Result>
                             </ui:InputDialog>
                             <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Email" sap:VirtualizedContainerService.HintSize="416,278" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the email of the student" Title="Student email" TopMost="False">
                               <ui:InputDialog.Result>
-                                <OutArgument x:TypeArguments="x:String">[strStdEmail]</OutArgument>
+                                <OutArgument x:TypeArguments="x:String">[out_strStdEmail]</OutArgument>
                               </ui:InputDialog.Result>
                             </ui:InputDialog>
-                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdName" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[strStdName]" />
-                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdEmail" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[strStdEmail]" />
-                            <uga:WriteRowConnections AllFields="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" ArrayRow="[{strStdName,strStdEmail}]" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of Machine learning start-nov" BrowserItemId="https://docs.google.com/spreadsheets/d/1L4LoSDuUEPybjPD80XkCoVuiGK1APX3VWSjN8Kcj2Sg/edit?usp=drivesdk" ConnectionId="f6e85bc0-7a1c-4fa3-82a5-1de88e09ebfb" DataType="ArrayRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="416,387.3333333333333" sap2010:WorkflowViewState.IdRef="WriteRowConnections_3" ItemSelectionMode="Browse" Range="'الورقة1'!C5:D56" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdName" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[out_strStdName]" />
+                            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="stdEmail" DisplayName="Set Asset" FolderPath="StudentSystem" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[out_strStdEmail]" />
+                            <uga:WriteRowConnections AllFields="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DataRow="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" ArrayRow="[{out_strStdName,out_strStdEmail}]" AuthScopesInvalid="False" BrowserItemFriendlyName="Copy of Machine learning start-nov" BrowserItemId="https://docs.google.com/spreadsheets/d/1L4LoSDuUEPybjPD80XkCoVuiGK1APX3VWSjN8Kcj2Sg/edit?usp=drivesdk" ConnectionId="f6e85bc0-7a1c-4fa3-82a5-1de88e09ebfb" DataType="ArrayRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="416,387.3333333333333" sap2010:WorkflowViewState.IdRef="WriteRowConnections_3" ItemSelectionMode="Browse" Range="'الورقة1'!C5:D56" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
                               <uga:WriteRowConnections.FileIdBackup>
                                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                                   <usau:BackupSlot.BackupValues>
@@ -403,7 +403,7 @@
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <If Condition="[strLastName.Equals(strStdName)]" sap:VirtualizedContainerService.HintSize="477.3333333333333,594.6666666666666" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If Condition="[strLastName.Equals(out_strStdName)]" sap:VirtualizedContainerService.HintSize="477.3333333333333,594.6666666666666" sap2010:WorkflowViewState.IdRef="If_3">
                         <If.Then>
                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_21">
                             <sap:WorkflowViewStateService.ViewState>
@@ -425,7 +425,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <If Condition="[strLastEmail.Equals(strStdEmail)]" sap:VirtualizedContainerService.HintSize="477.3333333333333,585.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If Condition="[strLastEmail.Equals(out_strStdEmail)]" sap:VirtualizedContainerService.HintSize="477.3333333333333,585.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
                         <If.Then>
                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_23">
                             <sap:WorkflowViewStateService.ViewState>
